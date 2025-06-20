@@ -3,7 +3,11 @@ run = "python app.py"
 
 [nix]
 channel = "stable-24_05"
-packages = ["c-ares", "cairo", "ffmpeg-full", "freetype", "ghostscript", "gobject-introspection", "grpc", "gtk3", "openssl", "pkg-config", "qhull", "tcl", "tk", "xcodebuild", "zlib"]
+packages = ["bash", "c-ares", "cacert", "cairo", "cargo", "ffmpeg-full", "freetype", "ghostscript", "gobject-introspection", "grpc", "gtk3", "libiconv", "libxcrypt", "openssl", "pkg-config", "qhull", "rustc", "tcl", "tk", "xcodebuild", "zlib"]
 
 [deployment]
 run = ["sh", "-c", "python app.py"]
+
+[[ports]]
+localPort = 81
+externalPort = 80
