@@ -1,0 +1,9 @@
+modules = ["python-3.12", "nodejs-20", "web"]
+run = "python app.py"
+
+[nix]
+channel = "stable-24_05"
+packages = ["c-ares", "cairo", "ffmpeg-full", "freetype", "ghostscript", "gobject-introspection", "grpc", "gtk3", "openssl", "pkg-config", "qhull", "tcl", "tk", "xcodebuild", "zlib"]
+
+[deployment]
+run = ["sh", "-c", "python app.py"]
