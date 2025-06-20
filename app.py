@@ -5,9 +5,9 @@ import json
 app = Flask(__name__)
 
 # Twilio setup
-account_sid = "your_twilio_sid"
-auth_token = "your_twilio_token"
-twilio_number = "+1XXXXXXXXXX"
+account_sid = "AC91c4df2979105fcf14ce5a446a12d31f"
+auth_token = "ea09368bf232259933e94ea3038046c0"
+twilio_number = "+12792057151"
 client = Client(account_sid, auth_token)
 
 def send_sms(to_number, message):
@@ -38,4 +38,5 @@ def sos():
     return jsonify({'status': 'SOS sent'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=81, debug=True)
+
