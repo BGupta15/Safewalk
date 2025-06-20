@@ -1,13 +1,18 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SafeWalk</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <title>SafeWalk - Personal Safety</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>🛡 SafeWalk</h1>
-  <button onclick="startTrip()">Start Trip</button>
-  <p id="status">Waiting to start...</p>
-  <script src="/static/app.js"></script>
+  <div class="container">
+    <h1>Welcome to SafeWalk</h1>
+    <p>Your personal safety companion</p>
+    <form action="/sos" method="post">
+      <button type="submit" class="sos-button">🚨 Send SOS Alert</button>
+    </form>
+  </div>
 </body>
 </html>

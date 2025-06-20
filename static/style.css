@@ -1,16 +1,38 @@
+/* static/style.css */
 body {
-  font-family: Arial;
-  text-align: center;
-  background: #121212;
-  color: #fff;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 20px;
 }
-button {
-  background: #4CAF50;
-  color: white;
-  padding: 15px;
-  font-size: 16px;
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.sos-button {
+  background-color: #ff4d4d;
   border: none;
-  border-radius: 8px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sos-button:hover {
+  background-color: #ff1a1a;
 }
